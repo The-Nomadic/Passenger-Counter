@@ -1,3 +1,11 @@
-let myAge = 23
+let count = 0
 
-console.log(myAge)
+function increment(){
+    count++;
+    console.log(count);
+    document.getElementById('js-people').innerText = count;
+}
+
+function save(){
+    console.log(count)
+}
