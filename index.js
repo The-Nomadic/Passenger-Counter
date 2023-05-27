@@ -1,11 +1,13 @@
 let count = 0
+let saveEl = document.getElementById('save-el').innerText;
 
 function increment(){
     count++;
-    console.log(count);
     document.getElementById('js-people').innerText = count;
 }
 
 function save(){
-    console.log(count)
+    let result =" "+count+ " - "
+    saveEl += result;
+    document.getElementById('save-el').innerText = saveEl
 }
